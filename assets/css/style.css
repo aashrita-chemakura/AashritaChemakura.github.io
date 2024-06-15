@@ -452,6 +452,26 @@ h6 {
   font-size: 22px;
 }
 
+.animated-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid orange; /* Cursor effect */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
 #hero .btn-about {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;

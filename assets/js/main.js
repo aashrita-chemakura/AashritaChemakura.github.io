@@ -130,21 +130,50 @@
     });
   }
 
-  /**
+    /**
    * Hero type effect
    */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
+    const typedText = select('.typed-text')
+    if (typedText) {
+      let typed_strings = typedText.getAttribute('data-typed-items')
+      typed_strings = typed_strings.split(',')
+      let index = 0;
+      const textElement = typedText;
+  
+      function typeEffect() {
+        let charIndex = 0;
+        const currentText = typed_strings[index];
+        textElement.textContent = '';
+  
+        function typeChar() {
+          if (charIndex < currentText.length) {
+            textElement.textContent += currentText.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeChar, 100); // Adjust typing speed here
+          } else {
+            setTimeout(deleteEffect, 2000); // Pause before deleting
+          }
+        }
+  
+        typeChar();
+      }
+  
+      function deleteEffect() {
+        const currentText = typed_strings[index];
+        function deleteChar() {
+          if (textElement.textContent.length > 0) {
+            textElement.textContent = currentText.substring(0, textElement.textContent.length - 1);
+            setTimeout(deleteChar, 50); // Adjust deleting speed here
+          } else {
+            index = (index + 1) % typed_strings.length;
+            setTimeout(typeEffect, 500); // Pause before typing the next text
+          }
+        }
+        deleteChar();
+      }
+  
+      typeEffect();
+    }
 
   /**
    * Porfolio isotope and filter
