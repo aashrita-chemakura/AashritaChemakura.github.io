@@ -363,6 +363,8 @@ h6 {
   transition: 0.3s;
 }
 
+
+
 .navbar-mobile a,
 .navbar-mobile a:focus {
   font-size: 15px;
@@ -638,6 +640,18 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.col-lg-6 .education-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.col-lg-6 .education-details li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust margin as needed */
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 /*--------------------------------------------------------------
