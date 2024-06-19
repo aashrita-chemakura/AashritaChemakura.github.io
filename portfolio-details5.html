@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -28,54 +30,71 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2HBEDGXBEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-2HBEDGXBEM');
+</script>
+
 <body>
 
   <main id="main">
 
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
 
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="portfolio-details text-center"> 
-          <img src="assets/img/projects/aurco_detection.png" class="img-fluid" alt="Arucomarker Detection">
-          <p class="mt-2">Arucomarker Detection</p> 
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="portfolio-details text-center">
+              <img src="assets/img/projects/aurco_detection.png" class="img-fluid" alt="Arucomarker Detection">
+              <p class="mt-2">Arucomarker Detection</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Goal Reacher Robot using Arucomarkers</h3>
+              <ul>
+                <li><strong>Project Details</strong>: <a target="_blank"
+                    href="hhttps://github.com/aashrita-chemakura/Goal-Reacher-Robot-using-Arucomarkers"><i
+                      class='bx bxl-github'></i> Github</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project Description</h2>
+              <p>Goal Reacher Robot using Arucomarker is an advanced robotic system designed to navigate through a
+                predefined environment using visual markers for guidance. This project leverages the integration of
+                ROS2, OpenCV, and advanced sensor technologies to achieve precise navigation and target reaching
+                capabilities.</p>
+
+              <h3>Key Features</h3>
+              <ul>
+                <li>Employs OpenCV for detecting Arucmarkers, facilitating accurate localization and navigation.</li>
+                <li>Converts relative frame data to world frame coordinates, enabling the robot to understand its
+                  position and destination within the environment.</li>
+                <li>Adjusts the robot's path based on real-time marker detection and frame transformations to reach
+                  specific targets efficiently.</li>
+              </ul>
+
+              <h3>Technologies Used</h3>
+              <ul>
+                <li>ROS2 Galactic Distribution for robot operating system functionalities</li>
+                <li>OpenCV for computer vision tasks related to marker detection</li>
+                <li>Gazebo for creating a simulated environment for testing and development</li>
+              </ul>
+
+            </div>
+          </div>
         </div>
+
       </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Goal Reacher Robot using Arucomarkers</h3>
-          <ul>
-            <li><strong>Project Details</strong>: <a target="_blank" href="hhttps://github.com/aashrita-chemakura/Goal-Reacher-Robot-using-Arucomarkers"><i class='bx bxl-github'></i> Github</a></li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Project Description</h2>
-          <p>Goal Reacher Robot using Arucomarker is an advanced robotic system designed to navigate through a predefined environment using visual markers for guidance. This project leverages the integration of ROS2, OpenCV, and advanced sensor technologies to achieve precise navigation and target reaching capabilities.</p>
-          
-          <h3>Key Features</h3>
-          <ul>
-            <li>Employs OpenCV for detecting Arucmarkers, facilitating accurate localization and navigation.</li>
-            <li>Converts relative frame data to world frame coordinates, enabling the robot to understand its position and destination within the environment.</li>
-            <li>Adjusts the robot's path based on real-time marker detection and frame transformations to reach specific targets efficiently.</li>
-          </ul>
-          
-          <h3>Technologies Used</h3>
-          <ul>
-            <li>ROS2 Galactic Distribution for robot operating system functionalities</li>
-            <li>OpenCV for computer vision tasks related to marker detection</li>
-            <li>Gazebo for creating a simulated environment for testing and development</li>
-          </ul>
-
-        </div>
       </div>
-    </div>
-
-  </div>
-</div>
-</section><!-- End Project Portfolio Section -->
+    </section><!-- End Project Portfolio Section -->
 
 
 
@@ -83,11 +102,12 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    
+
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -28,83 +30,108 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2HBEDGXBEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-2HBEDGXBEM');
+</script>
+
 <body>
 
   <main id="main">
 
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
 
-    <div class="row gy-4">
+        <div class="row gy-4">
 
-      <div class="col-lg-6">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
+          <div class="col-lg-6">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
 
-            <div class="swiper-slide">
-              <img src="assets/img/projects/terpp.png" alt="">
-              <p><text-align:center>TerpBot in Rviz and real environments.</p>
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/terpp.png" alt="">
+                  <p><text-align:center>TerpBot in Rviz and real environments.</p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/percep_result.png" alt="">
+                  <p>Outputs of YOLOv5 and MiDaS models Rviz visualization of the leader (green cylinder) and pointcloud
+                    data (red dots).</p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/final_results_2.png" alt="">
+                  <p>Successful dynamic obstacle avoidance: 1) Follows the leader, 2) Obstacle < 30cm from TerpBot
+                      appears in the feed, 3) Instantly stops and waits for obstacle to pass, 4) Continues following the
+                      leader.</p>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/projects/percep_result.png" alt="">
-              <p>Outputs of YOLOv5 and MiDaS models Rviz visualization of the leader (green cylinder) and pointcloud data (red dots).</p>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/projects/final_results_2.png" alt="">
-              <p>Successful dynamic obstacle avoidance: 1) Follows the leader, 2) Obstacle < 30cm from TerpBot appears in the feed, 3) Instantly stops and waits for obstacle to pass, 4) Continues following the leader.</p>
-            </div>
-
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="col-lg-6">
+            <div class="portfolio-info">
+              <h3>TerpBot - Leader-Follower Robot with Dynamic Obstacle Avoidance</h3>
+              <ul>
+                <li><strong>Project Details</strong>: <a target="_blank"
+                    href="https://github.com/aashrita-chemakura/plan-percep-ws"><i class='bx bxl-github'></i> Github</a>
+                </li>
+                <li><strong>Result</strong>: <a target="_blank" href="https://www.youtube.com/watch?v=kOSTu5ZXVmQ"><i
+                      class='bx bxl-youtube'></i> Watch on YouTube</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project Overview</h2>
+              <p>
+                TerpBot is a leader-follower robot designed to autonomously track and follow a leader while avoiding
+                dynamic obstacles. This project integrates advanced perception techniques using the YOLOv5 object
+                detection model and MiDaS monocular depth estimation to enable robust leader detection and obstacle
+                avoidance. </p>
+              <h3>Key Features</h3>
+              <ul>
+                <li><strong>Leader Detection:</strong> Utilizes YOLOv5 for real-time, multi-class object detection,
+                  ensuring accurate tracking of the designated leader.</li>
+                <li><strong>Depth Estimation:</strong> Implements MiDaS for monocular depth estimation, enhancing the
+                  robot's ability to perceive its surroundings and navigate autonomously.</li>
+                <li><strong>Obstacle Avoidance:</strong> Combines the outputs of the detection and depth models to
+                  formulate an effective obstacle avoidance strategy, ensuring safe and efficient navigation.</li>
+                <li><strong>Hardware and Control:</strong> Features a custom-built platform using Raspberry Pi and
+                  Arduino, optimized with an Anti-Windup PID controller for precise wheel control and trajectory
+                  tracking.</li>
+              </ul>
+              <h3>Achievements</h3>
+              <ul>
+                <li>Achieved high accuracy in leader localization with an average error of ±3 cm.</li>
+                <li>Demonstrated reliable dynamic obstacle avoidance capabilities in real-time scenarios.</li>
+              </ul>
+              </ul>
+            </div>
+          </div>
+
         </div>
+
       </div>
-
-      <div class="col-lg-6">
-        <div class="portfolio-info">
-          <h3>TerpBot - Leader-Follower Robot with Dynamic Obstacle Avoidance</h3>
-          <ul>
-            <li><strong>Project Details</strong>: <a target="_blank" href="https://github.com/aashrita-chemakura/plan-percep-ws"><i class='bx bxl-github'></i> Github</a></li>
-            <li><strong>Result</strong>: <a target="_blank" href="https://www.youtube.com/watch?v=kOSTu5ZXVmQ"><i class='bx bxl-youtube'></i> Watch on YouTube</a></li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Project Overview</h2>
-          <p>
-            TerpBot is a leader-follower robot designed to autonomously track and follow a leader while avoiding dynamic obstacles. This project integrates advanced perception techniques using the YOLOv5 object detection model and MiDaS monocular depth estimation to enable robust leader detection and obstacle avoidance. </p>
-          <h3>Key Features</h3>
-          <ul>
-            <li><strong>Leader Detection:</strong> Utilizes YOLOv5 for real-time, multi-class object detection, ensuring accurate tracking of the designated leader.</li>
-            <li><strong>Depth Estimation:</strong> Implements MiDaS for monocular depth estimation, enhancing the robot's ability to perceive its surroundings and navigate autonomously.</li>
-            <li><strong>Obstacle Avoidance:</strong> Combines the outputs of the detection and depth models to formulate an effective obstacle avoidance strategy, ensuring safe and efficient navigation.</li>
-            <li><strong>Hardware and Control:</strong> Features a custom-built platform using Raspberry Pi and Arduino, optimized with an Anti-Windup PID controller for precise wheel control and trajectory tracking.</li>
-          </ul>
-            <h3>Achievements</h3>
-            <ul>
-              <li>Achieved high accuracy in leader localization with an average error of ±3 cm.</li>
-              <li>Demonstrated reliable dynamic obstacle avoidance capabilities in real-time scenarios.</li>
-            </ul>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
+    </section><!-- End Portfolio Details Section -->
 
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    
+
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

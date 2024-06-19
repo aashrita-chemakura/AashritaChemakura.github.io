@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -28,66 +30,80 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2HBEDGXBEM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-2HBEDGXBEM');
+</script>
+
 <body>
 
   <main id="main">
 
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
 
-    <div class="row gy-4">
+        <div class="row gy-4">
 
-      <div class="col-lg-6">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
+          <div class="col-lg-6">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
 
-            <div class="swiper-slide">
-              <img src="assets/img/projects/ur5.png" alt="UR5">
-              <p> UR 5 Robotic Arm </p>
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/ur5.png" alt="UR5">
+                  <p> UR 5 Robotic Arm </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/gazebo_ur5.png" alt="Gazebo UR5">
+                  <p>Gazebo visualization of the Robot</p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/rviz_ur5.png" alt="Rviz UR5">
+                  <p>RViz visualization of the Robot</p>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/projects/gazebo_ur5.png" alt="Gazebo UR5">
-              <p>Gazebo visualization of the Robot</p>
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/projects/rviz_ur5.png" alt="Rviz UR5">
-              <p>RViz visualization of the Robot</p>
-            </div>
-
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="col-lg-6">
+            <div class="portfolio-info">
+              <h3>Robotic Gripper Arm</h3>
+              <ul>
+                <li><strong>Project Details</strong>: <a target="_blank"
+                    href="https://github.com/aashrita-chemakura/Mimicking-pick-and-place-UR5-manipulator"><i
+                      class='bx bxl-github'></i> Github</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+
+              <h3>Project Description</h3>
+              <p>Designed and integrated a specialized robotic gripper with the UR5 arm to enhance its functionality for
+                precise pick-and-place operations. Developed a robust ROS-based communication system for actuation
+                control to ensure seamless operation.</p>
+
+              <h3>Technologies Used</h3>
+              <ul>
+                <li>SolidWorks for 3D modeling and assembly of the UR5 robot</li>
+                <li>ROS (Robot Operating System) for robot control and communication</li>
+                <li>Gazebo for simulating the robot's environment and tasks</li>
+                <li>Rviz for visualizing the robot's operations and sensor data</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
       </div>
-
-      <div class="col-lg-6">
-        <div class="portfolio-info">
-          <h3>Robotic Gripper Arm</h3>
-          <ul>
-            <li><strong>Project Details</strong>: <a target="_blank" href="https://github.com/aashrita-chemakura/Mimicking-pick-and-place-UR5-manipulator"><i class='bx bxl-github'></i> Github</a></li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-
-          <h3>Project Description</h3>
-          <p>Designed and integrated a specialized robotic gripper with the UR5 arm to enhance its functionality for precise pick-and-place operations. Developed a robust ROS-based communication system for actuation control to ensure seamless operation.</p>
-          
-          <h3>Technologies Used</h3>
-          <ul>
-            <li>SolidWorks for 3D modeling and assembly of the UR5 robot</li>
-            <li>ROS (Robot Operating System) for robot control and communication</li>
-            <li>Gazebo for simulating the robot's environment and tasks</li>
-            <li>Rviz for visualizing the robot's operations and sensor data</li>
-          </ul>
-        </div>
       </div>
-    </div>
-
-  </div>
-</div>
-</section><!-- End Project Portfolio Section -->
+    </section><!-- End Project Portfolio Section -->
 
 
 
@@ -95,11 +111,12 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    
+
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
