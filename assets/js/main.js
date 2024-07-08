@@ -274,6 +274,29 @@
   });
 
   /**
+   * Email JS
+   */
+  const contactForm = document.getElementById('contact-form');
+  const contactMessage = document.getElementById('sent-message');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_wwtsjvo', 'template_9h60mlf', '#contact-form', 'vY-g3r8qezTZzquJP')
+      .then(() => {
+        contactMessage.textContent = "Your message has been sent. Thank you!"
+
+        setTimeout(() => {
+          contactMessage.textContent = ''
+        }, 5000)
+
+        contactForm.reset();
+      })
+  }
+
+  contactForm.addEventListener('submit', sendEmail);
+
+  /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
