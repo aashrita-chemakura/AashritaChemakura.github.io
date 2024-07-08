@@ -293,7 +293,7 @@ const contactMessage = document.getElementById('sent-message');
 const sendEmail = (e) => {
   e.preventDefault();
 
-  emailjs.sendForm('service_5wfiny6', 'template_gsx9en1', '#contact-form', 'iR4cVRwdc3xjdn0cT')
+  emailjs.sendForm('service_wwtsjvo', 'template_9h60mlf', '#contact-form', 'vY-g3r8qezTZzquJP')
     .then(() => {
       contactMessage.textContent = "Your message has been sent. Thank you!"
 
